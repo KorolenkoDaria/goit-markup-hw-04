@@ -1,0 +1,308 @@
+:root{
+    --primaryBrand: #4D5AE5;
+    --pressedState: #404BBF;
+    --mainColor: #2E2F42;
+    --successColor: #31D0AA;
+    --textColor: #434455;
+    --subtleText: #8E8F99;
+    --accentColor: #E7E9FC;
+    --lightBg: #F4F4FD;
+    --white: #FFFFFF;
+    --modalBg: #FCFCFC;
+}
+* {
+   box-sizing: border-box; 
+   padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--textColor);
+    background-color: var(--white);
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+.header{
+    border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0;
+}
+.logo{
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primaryBrand);
+}
+.link{
+    text-decoration: none;
+}
+.logo-accent{
+    color: var(--mainColor);
+}
+.list{
+    list-style: none;
+}
+.list-item-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+    padding: 24px 0;
+}
+.list-item-link:hover,
+.list-item-link:focus{
+    color: var(--pressedState);
+}
+.contacts{
+    font-style: normal;
+    align-self: flex-end;
+}
+.address-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 24px 0;
+}
+.address-link:hover,
+.address-link:focus {
+    color: var(--pressedState);
+}
+.hero{
+    background-color: var(--mainColor);
+    padding: 188px 0 188px 0;
+}
+.hero-tittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    max-width: 496px;
+    margin: 0 auto 48px;
+}
+.btn-tittle{
+    background-color: var(--primaryBrand);
+    color:var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;  
+}
+.btn-tittle:hover,
+.btn-tittle:focus{
+    background-color:var(--pressedState);
+}
+.tittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--mainColor);
+}
+.subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--mainColor);
+}
+.subtitle-text{
+    font-size: 16px;
+    line-height: 1.5;   
+    letter-spacing: 0.02em;
+    color: var(--textColor);
+}
+.team{
+    background-color: var(--lightBg);
+}
+.team-list-item{
+    background-color: var(--white);
+}
+.footer{
+    background-color: var(--mainColor);
+}
+.footer-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--lightBg);
+}
+.logo-accent-light{
+    color: var(--lightBg);
+}
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex; 
+    align-items: center;
+}
+.header-logo{
+    margin-right: 76px;
+}
+.nav-list{
+    display: flex;
+    gap: 40px; 
+}
+.contacts-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;   
+}
+.advantages{
+    padding: 120px 0;
+}
+.advantages-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.advantages-list-item{
+    width: calc((100% - 72px) / 4);
+}
+.advantages-subtitle{
+    margin-bottom: 8px;
+}
+.about{
+    padding-bottom: 120px;
+}
+.about-tittle{
+    margin-bottom: 72px;
+}
+.about-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.about-list-item{
+    width: calc((100% - 48px) / 3);
+}
+.team{
+    padding: 120px 0;
+}
+.team-tittle{
+    margin-bottom: 72px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.team-list-item {
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+.team-subtitle-wrap{
+    padding: 32px 16px;
+}
+.team-subtitle{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-subtitle-text{
+    text-align: center;
+}
+.footer{
+    padding: 100px 0;
+}
+.footer-link{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.portfolio {
+    padding: 96px 0 120px 0;
+}
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.filter-btn{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--lightBg);
+    border: 1px solid var(--accentColor);
+    color: var(--primaryBrand);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    background: var(--pressedState);
+    border:none;
+    color:var(--white);
+    border: 1px solid transparent;
+}
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
+.portfolio-subtitle {
+   margin-bottom: 8px;
+}
+.portfolio-subtitle-wrap {
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    padding: 32px 16px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
