@@ -81,7 +81,7 @@ color: var(--primaryBrand);
 }
 .hero{
     background-color: var(--mainColor);
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(/images/people-office\ bg-min.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(/images/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0 188px 0;
